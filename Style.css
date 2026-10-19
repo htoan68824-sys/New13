@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f3f6fb;
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+    background-color: #1769aa;
+    border-radius: 10px;
+}
+
+section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+    color: #1769aa;
+    font-size: 21px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    min-height: 130px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #eef3f8;
+}
+
+.item {
+    flex: 0 0 100px;
+    min-width: 0;
+    min-height: 80px;
+    padding: 12px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+    font-weight: bold;
+    background-color: lightblue;
+    border: 1px solid #2783b8;
+    border-radius: 6px;
+}
+
+/* Ví dụ 1: không mở rộng */
+.container:first-of-type .item {
+    flex-grow: 0;
+}
+
+/* Ví dụ 2: Item 2 mở rộng */
+.grow {
+    flex-grow: 1;
+    background-color: #ffcf8b;
+    border-color: #c58023;
+}
+
+/* Ví dụ 3: so sánh tỷ lệ mở rộng */
+.grow-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: lightgreen;
+    border-color: #359447;
+}
+
+.grow-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+    background-color: #c8b6f2;
+    border-color: #7855b8;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #555;
+}
